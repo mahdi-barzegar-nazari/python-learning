@@ -1,11 +1,15 @@
-<div align="center">
 # 🐍 Python Learning & Practice
+
 A structured archive documenting my daily Python learning journey, fundamental coding exercises, and algorithmic problem solutions.
-</div>
+
 ---
+
 ## 📖 Overview
+
 This repository serves as a personal log to track my daily coding routine, improve problem-solving skills, and maintain a consistent development workflow on GitHub.
+
 ---
+
 ## 📂 Repository Structure
 
 | Directory | Description |
