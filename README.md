@@ -18,15 +18,23 @@ This repository serves as a personal log to track my daily coding routine, impro
 | 📂 **`quera-solutions/`** | Clean implementations and solved algorithmic challenges from the [Quera](https://quera.org) platform. |
 
 ---
+
 ## 🎯 Goals
+
 * 🔄 **Consistency:** Maintaining a daily coding habit and tracking personal growth over time.
 * 🧩 **Problem Solving:** Enhancing algorithmic thinking through Quera exercises.
 * 📦 **Version Control:** Practicing clean Git commits and structured repository management.
+
 ---
+
 ## 🛠️ Tools & Environment
+
 * **Language:** Python 3.x
 * **Editor:** Visual Studio Code
 * **Version Control:** Git & GitHub
+
 ---
+
 ## 📄 License
+
 Distributed under the MIT License. See [`LICENSE`](./LICENSE) for more information.
