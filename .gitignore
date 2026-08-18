@@ -1,0 +1,14 @@
+# Python junk files
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environments
+.venv/
+env/
+venv/
+
+# VS Code settings
+.vscode/
+.idea/
+.DS_Store
