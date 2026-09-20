@@ -1,0 +1,40 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    name: Style, scripts, and notebooks
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.txt
+      - name: Install
+        run: python -m pip install -r requirements.txt ruff
+      - name: PEP 8 (ruff)
+        run: ruff check .
+      - name: Run every practice script
+        run: |
+          for script in basics/*.py; do
+            echo "::group::$script"
+            python "$script"
+            echo "::endgroup::"
+          done
+      - name: Execute every notebook top to bottom
+        run: |
+          for notebook in basics/*.ipynb; do
+            jupyter nbconvert --to notebook --execute \
+              --output-dir "$RUNNER_TEMP/executed" "$notebook"
+          done
